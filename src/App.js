@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App bg-[#191919] dark:bg-black">
+    <div className="App bg-[#191919] dark:bg-black h-screen">
       <NavBar/>
       <Form/>
       <Footer/>

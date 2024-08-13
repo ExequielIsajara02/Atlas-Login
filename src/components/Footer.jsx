@@ -8,7 +8,7 @@ import { PiWhatsappLogoLight } from "react-icons/pi";
 
 const Footer = () => {
   return (
-    <footer className=" grid grid-cols-3 mt-72 pt-10 pb-8">
+    <footer className=" grid grid-cols-3 pt-10">
       <div className="">
         <h2 className="text-left w-[380px] mx-auto p-[2px] text-white">
           Contact us
