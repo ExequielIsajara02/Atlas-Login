@@ -1,20 +1,48 @@
 import React from "react";
 import crombie_logo2 from "../assets/img/crombie_logo2.png";
+import { LuYoutube } from "react-icons/lu";
+import { FiLinkedin } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
+import { RiTiktokLine } from "react-icons/ri";
+import { PiWhatsappLogoLight } from "react-icons/pi";
 
 const Footer = () => {
   return (
-    <footer className="border border-t-black border-l-0 border-r-0 grid grid-cols-3 mt-72 pt-10 pb-8 dark:border-slate-700">
+    <footer className=" grid grid-cols-3 mt-72 pt-10 pb-8">
       <div className="">
-        <h2 className="text-left w-[380px] mx-auto p-[2px] dark:text-white">Contact us</h2>
-        <input type="text" className="border border-b-black outline-none mr-4 ml-2 bg-inherit dark:border-slate-700 dark:text-white shadow-sm shadow-slate-700 rounded-sm pl-[5px]" placeholder="Your name"/>
-        <input type="text" className="border border-b-black outline-none bg-inherit dark:border-slate-700 dark:text-white shadow-sm shadow-slate-700 rounded-sm pl-[5px] py-[1px]" placeholder="your@email.com"/>
+        <h2 className="text-left w-[380px] mx-auto p-[2px] text-white">
+          Contact us
+        </h2>
+        <ul className="flex justify-start ml-10">
+          <li className="bg-yellow-600 text-center w-8 h-8 rounded-full p-1">
+            <LuYoutube className="w-full h-full"/>
+          </li>
+          <li className="bg-yellow-600 text-center w-8 h-8 rounded-full p-1">
+            <FiLinkedin className="w-full h-full"/>
+          </li>
+          <li className="bg-yellow-600 text-center w-8 h-8 rounded-full p-1">
+            <FaInstagram  className="w-full h-full"/>
+          </li>
+          <li className="bg-yellow-600 text-center w-8 h-8 rounded-full p-1">
+            <RiTiktokLine  className="w-full h-full"/>
+          </li>
+          <li className="bg-yellow-600 text-center w-8 h-8 rounded-full p-1">
+            <PiWhatsappLogoLight  className="w-full h-full"/>
+          </li>
+        </ul>
       </div>
       <div className="flex justify-center items-center">
-        <img className="w-8 text-center rounded-lg" src={crombie_logo2} alt=""/>
+        <img
+          className="w-8 text-center rounded-lg"
+          src={crombie_logo2}
+          alt=""
+        />
         <h2 className="text-[20px] dark:text-white">Crombie</h2>
       </div>
       <div className="flex justify-center items-end">
-        <button className="border border-black rounded-full w-30 px-4 py-1 hover:bg-slate-700 text-black hover:text-white dark:border-slate-700 dark:text-white">People→</button>
+        <button className="border border-black rounded-full w-30 px-4 py-1 bg-yellow-600 hover:bg-slate-700 text-black hover:text-white dark:border-slate-700 dark:text-white">
+          People-Force →
+        </button>
       </div>
     </footer>
   );
