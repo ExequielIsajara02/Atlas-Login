@@ -36,18 +36,18 @@ const NavBar = () => {
         <h1 className="text-white text-[28px] font-bold text-shadow shadow-slate-900 mr-2">
           Atlas
         </h1>
-        <img src={crombie_logo} alt="" className="w-6 text-center pt-2" />
-        <h2 className="w-[40px] text-[14px] max-md:w-full font-bold text-white pt-2">
+        <img src={crombie_logo} alt="" className="w-6 text-center pt-1" />
+        <h2 className="w-[40px] text-[16px] max-md:w-full font-bold text-white pt-2">
           Crombie
         </h2>
       </div>
       <div className="flex justify-end items-center w-3/4 text-right text-sm">
         <button
           href="www.youtube.com"
-          className="p-2 h-10 px-4 mr-20 rounded-full bg-black  text-white hover:bg-slate-900 dark:bg-white dark:text-black"
+          className="h-10 px-4 py-[2px] mr-20 text-[12px] font-bold rounded-full bg-white hover:bg-slate-900 dark:bg-white dark:text-black"
           onClick={handleMode}
         >
-          {mode === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode"}
+          {mode === "dark" ? "🌙 Dark Mode" : "☀️ Light Mode"}
         </button>
       </div>
     </nav>

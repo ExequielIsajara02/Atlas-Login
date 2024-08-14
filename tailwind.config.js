@@ -11,6 +11,9 @@ module.exports = {
         DEFAULT: "0 2px 4px var(--tw-shadow-color)",
         lg: "0 8px 16px var(--tw-shadow-color)",
       },
+      fontFamily: {
+        'crombie-font': ['RedHatDisplay', 'sans-serif'],
+      },
       animation: {
         "flip-horizontal": "flip-horizontal 1s ease-in-out",
       },
